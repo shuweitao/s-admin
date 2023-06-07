@@ -22,3 +22,21 @@
 [![4.png](imgs%2F4.png)](https://github.com/shuweitao/s-admin/blob/main/imgs/4.png)
 [![5.png](imgs%2F5.png)](https://github.com/shuweitao/s-admin/blob/main/imgs/5.png)
 [![6.png](imgs%2F6.png)](https://github.com/shuweitao/s-admin/blob/main/imgs/6.png)
+
+## 参考文档
+
+1. vite 中文文档：[https://cn.vitejs.dev/config/](https://cn.vitejs.dev/config/)
+2. vue3 中文文档：[https://v3.cn.vuejs.org/](https://v3.cn.vuejs.org/)
+3. Element-plus 中文文档：[https://element-plus.gitee.io/zh-CN/component/button.html](https://element-plus.gitee.io/zh-CN/component/button.html)
+
+## 项目运行 pnpm方式(推荐)
+1. 全局安装pnpm 
+npm i pnpm -g
+2. 安装依赖
+pnpm install 
+3. 运行项目
+pnpm dev
+4. 打包项目
+pnpm build
+5. 本地预览 打包项目
+pnpm preview
