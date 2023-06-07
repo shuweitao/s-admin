@@ -28,8 +28,10 @@
 1. vite 中文文档：[https://cn.vitejs.dev/config/](https://cn.vitejs.dev/config/)
 2. vue3 中文文档：[https://v3.cn.vuejs.org/](https://v3.cn.vuejs.org/)
 3. Element-plus 中文文档：[https://element-plus.gitee.io/zh-CN/component/button.html](https://element-plus.gitee.io/zh-CN/component/button.html)
+4. NestJS [https://docs.nestjs.com/](https://docs.nestjs.com/)
+5. Prisma [https://prisma.yoga](https://prisma.yoga)
 
-## 项目运行 pnpm方式(推荐)
+## 项目运行
 1. 全局安装pnpm 
 npm i pnpm -g
 2. 安装依赖
