@@ -10,9 +10,9 @@
 - 高度封装 el-form 配置化动态搜索组件
 - 高度封装 wangeditor 编辑器通用处理
 - ...
-![1.png](imgs%2F1.png)
-![2.png](imgs%2F2.png)
-![3.png](imgs%2F3.png)
-![4.png](imgs%2F4.png)
-![5.png](imgs%2F5.png)
-![6.png](imgs%2F6.png)
+  ![(http://123.60.10.252/imgs/1.png)](http://123.60.10.252/imgs/1.png)
+  ![(http://123.60.10.252/imgs/2.png)](http://123.60.10.252/imgs/2.png)
+  ![(http://123.60.10.252/imgs/3.png)](http://123.60.10.252/imgs/3.png)
+  ![(http://123.60.10.252/imgs/4.png)](http://123.60.10.252/imgs/4.png)
+  ![(http://123.60.10.252/imgs/5.png)](http://123.60.10.252/imgs/5.png)
+  ![(http://123.60.10.252/imgs/6.png)](http://123.60.10.252/imgs/6.png)
