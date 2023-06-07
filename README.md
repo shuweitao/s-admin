@@ -16,6 +16,7 @@
 - 高度封装 el-form 配置化动态搜索组件
 - 高度封装 wangeditor 编辑器通用处理
 - ...
+- 
 [![1.png](imgs%2F1.png)](https://github.com/shuweitao/s-admin/blob/main/imgs/1.png)
 [![2.png](imgs%2F2.png)](https://github.com/shuweitao/s-admin/blob/main/imgs/2.png)
 [![3.png](imgs%2F3.png)](https://github.com/shuweitao/s-admin/blob/main/imgs/3.png)
@@ -28,8 +29,8 @@
 1. vite 中文文档：[https://cn.vitejs.dev/config/](https://cn.vitejs.dev/config/)
 2. vue3 中文文档：[https://v3.cn.vuejs.org/](https://v3.cn.vuejs.org/)
 3. Element-plus 中文文档：[https://element-plus.gitee.io/zh-CN/component/button.html](https://element-plus.gitee.io/zh-CN/component/button.html)
-4. NestJS [https://docs.nestjs.com/](https://docs.nestjs.com/)
-5. Prisma [https://prisma.yoga](https://prisma.yoga)
+4. NestJS 文档：[https://docs.nestjs.com/](https://docs.nestjs.com/)
+5. Prisma 文档：[https://prisma.yoga](https://prisma.yoga)
 
 ## 项目运行
 1. 全局安装pnpm 
