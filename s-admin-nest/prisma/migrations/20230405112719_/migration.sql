@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `category` ADD COLUMN `article_count` INTEGER UNSIGNED NOT NULL DEFAULT 0;

@@ -1,0 +1,56 @@
+:root {
+  --el-color-primary: #4a5dff !important;
+  --el-color-primary-dark-2: rgb(59, 74, 204) !important;
+  --el-color-primary-light-3: rgb(128, 142, 255) !important;
+  --el-color-primary-light-5: rgb(165, 174, 255) !important;
+  --el-color-primary-light-7: rgb(201, 206, 255) !important;
+  --el-color-primary-light-8: rgb(219, 223, 255) !important;
+  --el-color-primary-light-9: rgb(237, 239, 255) !important;
+  --el-color-danger: #f56c6c!important;
+  --el-font-weight-primary: 400 !important;
+  --el-menu-item-height: 46px !important;
+  --el-menu-sub-item-height: var(--el-menu-item-height) !important;
+  --el-menu-icon-width: 18px !important;
+  --aside-width: 200px !important;
+  --header-height: 60px !important;
+  --color-white: #ffffff !important;
+  --table-header-bg-color: #f8f8f8 !important;
+  --el-font-size-extra-large: 18px !important;
+  --el-menu-base-level-padding: 16px !important;
+  --el-menu-level-padding: 26px !important;
+  --el-font-size-large: 16px !important;
+  --el-font-size-medium: 15px !important;
+  --el-font-size-base: 14px !important;
+  --el-font-size-small: 13px !important;
+  --el-font-size-extra-small: 12px !important;
+
+  --el-bg-color: var(--color-white) !important;
+  --el-bg-color-page: #f7f7f7 !important;
+  --el-bg-color-overlay: #ffffff !important;
+  --el-text-color-primary: #333333 !important;
+  --el-text-color-regular: #666666 !important;
+  --el-text-color-placeholder: #a8abb2 !important;
+  --el-text-color-secondary: #999999 !important;
+  --el-text-color-disabled: #c0c4cc !important;
+  --el-border-color: #dcdfe6 !important;
+  --el-border-color-light: #e4e7ed !important;
+  --el-border-color-lighter: #ebeef5 !important;
+  --el-border-color-extra-light: #f2f2f2 !important;
+  --el-border-color-dark: #d4d7de !important;
+  --el-border-color-darker: #cdd0d6 !important;
+  --el-fill-color: #f0f2f5 !important;
+  --el-fill-color-light: #f5f7fa !important;
+  --el-fill-color-lighter: #fafafa !important;
+  --el-fill-color-extra-light: #fafcff !important;
+  --el-fill-color-dark: #ebedf0 !important;
+  --el-fill-color-darker: #e6e8eb !important;
+  --el-fill-color-blank: #ffffff !important;
+  --el-mask-color: rgba(255, 255, 255, 0.9) !important;
+  --el-mask-color-extra-light: rgba(255, 255, 255, 0.3) !important;
+  -el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.04),
+    0px 8px 20px rgba(0, 0, 0, 0.08) !important;
+  --el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.12) !important;
+  --el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, 0.12) !important;
+  --el-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, 0.08),
+    0px 12px 32px rgba(0, 0, 0, 0.12), 0px 8px 16px -8px rgba(0, 0, 0, 0.16) !important;
+}

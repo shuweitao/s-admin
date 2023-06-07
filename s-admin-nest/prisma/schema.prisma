@@ -1,0 +1,93 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// 用户表
+model User {
+  //BigInt类型	主键 自增值	非负BitInt
+  id         Int      @id @default(autoincrement()) @db.UnsignedInt()
+  //字符串，默认为varchar(191)
+  account    String   @unique // 登录账号
+  password   String
+  username   String? // 用户名 username
+  status     Int      @default(1) // 状态 0:未启用 1:已启用
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  roles      Role[]   @relation("UserRole")
+}
+
+// 角色表
+model Role {
+  id          Int          @id @default(autoincrement()) @db.UnsignedInt()
+  name        String       @unique
+  description String?
+  status      Int          @default(1) // 状态 0:未启用 1:已启用
+  created_at  DateTime     @default(now())
+  updated_at  DateTime     @updatedAt
+  permissions Permission[] @relation("RolePermission")
+  users       User[]       @relation("UserRole")
+}
+
+// 菜单权限表
+model Permission {
+  id          Int      @id @default(autoincrement()) @db.UnsignedInt()
+  name        String
+  description String?
+  type        String   @default("M") // M:目录 C:菜单 A:按钮
+  path        String
+  icon        String? //菜单图标  
+  hidden      Boolean  @default(false) //是否显示  Boolean
+  status      Int      @default(1) // 状态 0:未启用 1:已启用
+  sort        Int      @default(0) @db.UnsignedInt() //排序  Number
+  pid         Int      @default(0)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  roles       Role[]   @relation("RolePermission")
+}
+
+// 文章栏目表
+model Category {
+  id            Int       @id @default(autoincrement()) @db.UnsignedInt()
+  title         String
+  sort          Int       @default(0) @db.UnsignedInt() //排序
+  status        Int       @default(1) // 状态 0:未启用 1:已启用
+  article_count Int       @default(0) @db.UnsignedInt() // 文章数
+  articles      Article[]
+  created_at    DateTime  @default(now())
+  updated_at    DateTime  @updatedAt
+}
+
+// 文章表
+model Article {
+  id       Int     @id @default(autoincrement()) @db.UnsignedInt()
+  title    String // 标题
+  desc     String? @db.Text() // 简介
+  content  String? @db.Text() // 内容
+  author   String? @db.Text() // 作者
+  image    String? @db.Text() // 文章封面
+  abstract String? @db.Text() // 摘要
+  sort     Int     @default(0) @db.UnsignedInt() // 排序
+  collect  Boolean @default(false) // 收藏状态 不需要
+  click    Int     @default(0) @db.UnsignedInt() // 浏览量
+  status   Int     @default(1) // 章状态 是否显示 0:未启用 1:已启用
+
+  category        Category     @relation(fields: [category_id], references: [id], onDelete: Cascade)
+  category_id     Int          @db.UnsignedInt
+  CollectUser     CollectUser? @relation(fields: [collect_user_id], references: [id])
+  collect_user_id Int?         @db.UnsignedInt()
+  created_at      DateTime     @default(now())
+  updated_at      DateTime     @updatedAt
+}
+
+// 用户-文章 收藏表
+model CollectUser {
+  id         Int       @id @default(autoincrement()) @db.UnsignedInt()
+  articles   Article[]
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+}

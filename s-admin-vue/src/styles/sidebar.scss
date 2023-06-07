@@ -1,0 +1,95 @@
+#app {
+  .logo_box {
+    width: var(--aside-width);
+    padding: 10px 0 10px 20px;
+    color: var(--el-text-color-primary);
+
+    .logo {
+      width: 30px;
+      height: 30px;
+      background: url("@/assets/imgs/logo.png");
+      background-size: 100% 100%;
+    }
+  }
+
+  .el-aside {
+    width: var(--aside-width) !important;
+    background-color: var(--color-white);
+    overflow-x: hidden;
+    transition: 0.4s;
+    height: 100%;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%), 0 0 3px 0 rgb(0 0 0 / 4%);
+
+    &.collapse {
+      width: 64px !important;
+    }
+
+    // 菜单整体样式
+    .el-menu {
+      max-width: var(--aside-width);
+      background-color: transparent;
+      border: none;
+
+      .el-menu-item {
+        font-weight: bold;
+      }
+
+      // 一级菜单样式
+      .el-sub-menu {
+        .el-sub-menu__title {
+          font-weight: bold;
+        }
+
+        .el-sub-menu__title {
+          color: var(--el-text-color-primary);
+
+          &:hover {
+            background-color: var(--el-color-primary-light-9);
+          }
+        }
+      }
+
+      .el-menu .el-menu-item {
+        padding-left: 40px;
+        font-weight: unset;
+      }
+
+      // 二级及以下菜单样式
+      .el-menu-item {
+        &.is-active,
+        &:hover {
+          background-color: var(--el-color-primary-light-9);
+        }
+        &.is-active {
+          border-right-style: solid;
+          border-right-color: var(--el-color-primary);
+          border-right-width: 2px;
+          border-radius: 2px;
+          color: var(--el-color-primary);
+        }
+
+        .el-sub-menu__title,
+        a,
+        i {
+          // color: var(--el-color-primary);
+        }
+      }
+    }
+  }
+
+  .el-aside::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .el-aside::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .el-aside::-webkit-scrollbar-track {
+    border-radius: 0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
