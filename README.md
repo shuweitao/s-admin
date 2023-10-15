@@ -22,18 +22,12 @@ http://123.60.10.252/#/login
 账号：test
 密码：123456
 
-  ![(http://123.60.10.252/imgs/1.png)](http://123.60.10.252/imgs/1.png)
-  
-  ![(http://123.60.10.252/imgs/2.png)](http://123.60.10.252/imgs/2.png)
-  
-  ![(http://123.60.10.252/imgs/3.png)](http://123.60.10.252/imgs/3.png)
-  
-  ![(http://123.60.10.252/imgs/4.png)](http://123.60.10.252/imgs/4.png)
-  
-  ![(http://123.60.10.252/imgs/5.png)](http://123.60.10.252/imgs/5.png)
-  
-  ![(http://123.60.10.252/imgs/6.png)](http://123.60.10.252/imgs/6.png)
-  
+![1.png](./assets/1.png)
+![2.png](./assets/2.png)
+![3.png](./assets/3.png)
+![4.png](./assets/4.png)
+![5.png](./assets/5.png)
+![6.png](./assets/6.png)
 
 ## 参考文档
 
