@@ -22,12 +22,14 @@ http://123.60.10.252/#/login
 账号：test
 密码：123456
 
-![1.png](./assets/1.png)
-![2.png](./assets/2.png)
-![3.png](./assets/3.png)
-![4.png](./assets/4.png)
-![5.png](./assets/5.png)
-![6.png](./assets/6.png)
+<img src="./assets/1.png" style="zoom:50%;" />
+<img src="./assets/2.png" style="zoom:50%;" />
+<img src="./assets/3.png" style="zoom:50%;" />
+<img src="./assets/4.png" style="zoom:50%;" />
+<img src="./assets/5.png" style="zoom:50%;" />
+<img src="./assets/6.png" style="zoom:50%;" />
+
+
 
 ## 参考文档
 
